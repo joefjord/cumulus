@@ -116,12 +116,20 @@ nav a:hover {
   margin-top: -18px;
 }
 
-#contact small {
+.photoCredit {
   font-size: .65em;
   color: rgba(255, 255, 255, .3);
   float: right;
   margin-top: 10px;
   padding-right: 15px;
+}
+
+.copyright {
+  font-size: .65em;
+  color: rgba(255, 255, 255, .3);
+  position: relative;
+  bottom: -35px;
+  left: 42%;
 }
 
 .CUMULUS {
@@ -178,4 +186,4 @@ nav a:hover {
     padding-top:10%;
     padding-bottom: 40px;
   }
-} 
+}
