@@ -3,6 +3,23 @@
 /* This is a CSS comment */
 
 
-@media only screen and (min-width:500px) {
+@media only screen and (max-width:1800px) {
+  #feature{
+    background: url(../images/smoke@0,75x.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
 
+@media only screen and (max-width:1200px) {
+  #feature{
+    background: url(../images/smoke@0,5x.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #feature{
+    background: url(../images/smoke@0,25x.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
 }
