@@ -17,6 +17,10 @@
     background-size:  cover;
     background-color: #CC7236;
   }
+
+  #contact {
+    min-height: 100px;
+  }
 }
 
 @media only screen and (max-width:600px) {
