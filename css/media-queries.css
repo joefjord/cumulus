@@ -35,7 +35,10 @@
   }
 
   .copyright {
-    left: 22%;
+    position: static;
+    padding-top: 76px;
+    padding-left: 40px;
+
   }
 
 }
