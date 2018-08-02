@@ -7,6 +7,7 @@
   #feature{
     background: url(../images/smoke@0,75x.jpg) no-repeat center center fixed;
     background-size: cover;
+    background-color: #CC7236;
   }
 }
 
@@ -14,6 +15,7 @@
   #feature{
     background: url(../images/smoke@0,5x.jpg) no-repeat center top fixed;
     background-size:  cover;
+    background-color: #CC7236;
   }
 }
 
@@ -21,5 +23,6 @@
   #feature{
     background: url(../images/smoke@0,25x.jpg) no-repeat center top fixed;
     background-size: 1200px;
+    background-color: #CC7236;
   }
 }
