@@ -13,7 +13,7 @@
 @media only screen and (max-width:1200px) {
   #feature{
     background: url(../images/smoke@0,5x.jpg) no-repeat center top fixed;
-    background-size:  1800px
+    background-size:  cover;
   }
 }
 
