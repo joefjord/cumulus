@@ -25,4 +25,13 @@
     background-size: 1200px;
     background-color: #CC7236;
   }
+
+  #contact {
+    background-color: #CC7236;
+    height: 100px;
+    min-height: 60px;
+    width: 100%;
+    margin-top: -18px;
+  }
+
 }
