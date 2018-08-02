@@ -185,5 +185,7 @@ nav a:hover {
   #feature h2 {
     padding-top:10%;
     padding-bottom: 40px;
+    font-size: 1em;
+    letter-spacing: .25em;
   }
 }

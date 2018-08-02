@@ -19,7 +19,7 @@
 
 @media only screen and (max-width:600px) {
   #feature{
-    background: url(../images/smoke@0,25x.jpg) no-repeat center center fixed;
+    background: url(../images/smoke@0,25x.jpg) no-repeat center top fixed;
     /* background-size: cover; */
   }
 }
