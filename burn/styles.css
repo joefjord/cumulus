@@ -1,6 +1,5 @@
 body{
 	background: url(../images/img-noise-361x370.png) #373636;
-
 		font-size: 20px;
 		font-family: 'Roboto',sans-serif;
 }
@@ -13,16 +12,21 @@ header {
 	top: 70px;
 }
 
+header img {
+	margin: 0 auto;
+}
+
 header h1 {
 	font-weight: 300;
 	font-size: 1.5em;
 	text-align: center;
+	width: 105px;
 	color: #84541B;
 	margin-top: 5px;
 }
 
 #container {
-	max-width: 50%;
+	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
 	top: 115px;
@@ -73,6 +77,7 @@ form {
 #callButton{
 	width: 240px;
 	height: 80px;
+	margin: 0 auto;
 	background:  #CC7B1A;
 	border: none;
 	font-size: .7em;
