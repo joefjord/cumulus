@@ -1,0 +1,173 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="text/javascript" src="./catday.js"></script>
+        <title>Prescribed Burn Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Smoke Management Form</h1>
+        <form id="burnCalc">
+            <!-- Burn Size -->
+            <label for="sizeInput">Burn Size: </label>
+            <input id="sizeInput" name="sizeInput" type="number" step="0.01" min="0" required>&nbsp; Acres<br><br>
+
+            <!-- Category Day -->
+            <label for="categoryInput">Category Day: </label>
+            <select name="categoryInput" id="categoryInput" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br><br>
+
+            <!-- Target Distance -->
+            <label for="targetInput">Target Distance: </label>
+            <input id="targetInput" name="targetInput" type="number" step="0.01" min="0" required>&nbsp;Miles<br><br>
+
+            <!-- Fuel Type -->
+            <label for="fuelInput">Fuel Type: </label>
+            <select name="fuelInput" id="fuelInput" required>
+                <option value="Shortleaf Pine with Oak">Shortleaf Pine with Oak</option>
+                <option value="Shortleaf Pine Regeneration">Shortleaf Pine Regeneration</option>
+                <option value="Loblolly Pine with Oak">Loblolly Pine with Oak</option>
+                <option value="Loblolly Pine Regeneration">Loblolly Pine Regeneration</option>
+                <option value="Hardwood Leaf Litter">Hardwood Leaf Litter</option>
+                <option value="Grass or Brush">Grass or Brush</option>
+                <option value="Dispersed Slash">Dispersed Slash</option>
+                <option value="Piled Debris">Piled Debris</option>
+                <option value="Shortleaf Loblolly with Grass">Shortleaf Loblolly with Grass</option>
+                <option value="Corn">Corn</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Rice">Rice</option>
+                <option value="Soybean">Soybean</option>
+                <option value="Wheat">Wheat</option>
+            </select>
+            <br><br>
+
+            <!-- Fuel Type -->
+            <label for="loadInput">Load: </label>
+            <select name="loadInput" id="loadInput" required>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Heavy">Heavy</option>
+            </select>
+            <br><br>
+
+
+            <input type="submit" value="Calculate"> 
+            <button id="clear">Clear</button>
+        </form>
+
+        <div>
+            Available Tons: <span id="availableTons"></span>
+        </div>
+        <br>
+        <div>
+            Total Tons: <span id="totalTons"></span>
+        </div>
+        <br>
+        <div>
+            <span id="resultOutput"></span>
+        </div>
+        <a href="tel:18008308015">
+            <button id="button" class="vibrate-1">Report your crop burn to the Arkansas Agriculture Department Dispatch Center at 1-800-830-8015</button><br>
+        </a>
+        <script src="tons_per_acre_table.js"></script>
+        <script src="main.js"></script>
+        <tr>
+            <td align="left" bgcolor="#f3f2a5" width="100%">
+                <span id="myframe">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#dadada">
+                <form method="post" name="getcatday" size="1">
+                    <select onload="return makefwftwo(this.form)" onclick="return makefwftwo(this.form)" name="rencatday" size="1">
+                        <option selected="selected" value="ARZ057">Arkansas</option>
+                        <option value="ARZ074">Ashley</option>
+                        <option value="ARZ005">Baxter</option>
+                        <option value="ARZ001">Benton</option>
+                        <option value="ARZ003">Boone</option>
+                        <option value="ARZ068">Bradley</option>
+                        <option value="ARZ067">Calhoun</option>
+                        <option value="ARZ002">Carroll</option>
+                        <option value="ARZ075">Chicot</option>
+                        <option value="ARZ053">Clark</option>
+                        <option value="ARZ009">Clay</option>
+                        <option value="ARZ024">Cleburne</option>
+                        <option value="ARZ063">Cleveland</option>
+                        <option value="ARZ072">Columbia</option>
+                        <option value="ARZ031">Conway</option>
+                        <option value="ARZ026">Craighead</option>
+                        <option value="ARZ019">Crawford</option>
+                        <option value="ARZ036">Crittenden</option>
+                        <option value="ARZ035">Cross</option>
+                        <option value="ARZ062">Dallas</option>
+                        <option value="ARZ065">Desha</option>
+                        <option value="ARZ069">Drew</option>
+                        <option value="ARZ032">Faulkner</option>
+                        <option value="ARZ020">Franklin</option>
+                        <option value="ARZ006">Fulton</option>
+                        <option value="ARZ042">Garland</option>
+                        <option value="ARZ055">Grant</option>
+                        <option value="ARZ018">Greene</option>
+                        <option value="ARZ060">Hempstead</option>
+                        <option value="ARZ054">Hot Spring</option>
+                        <option value="ARZ051">Howard</option>
+                        <option value="ARZ016">Independence</option>
+                        <option value="ARZ015">Izard</option>
+                        <option value="ARZ025">Jackson</option>
+                        <option value="ARZ056">Jefferson</option>
+                        <option value="ARZ021">Johnson</option>
+                        <option value="ARZ071">Lafayette</option>
+                        <option value="ARZ017">Lawrence</option>
+                        <option value="ARZ049">Lee</option>
+                        <option value="ARZ064">Lincoln</option>
+                        <option value="ARZ059">Little River</option>
+                        <option value="ARZ030">Logan</option>
+                        <option value="ARZ045">Lonoke</option>
+                        <option value="ARZ011">Madison</option>
+                        <option value="ARZ004">Marion</option>
+                        <option value="ARZ070">Miller</option>
+                        <option value="ARZ028">Mississippi</option>
+                        <option value="ARZ047">Monroe</option>
+                        <option value="ARZ041">Montgomery</option>
+                        <option value="ARZ061">Nevada</option>
+                        <option value="ARZ012">Newton</option>
+                        <option value="ARZ066">Ouachita</option>
+                        <option value="ARZ039">Perry</option>
+                        <option value="ARZ058">Phillips</option>
+                        <option value="ARZ052">Pike</option>
+                        <option value="ARZ027">Poinsett</option>
+                        <option value="ARZ040">Polk</option>
+                        <option value="ARZ022">Pope</option>
+                        <option value="ARZ046">Prairie</option>
+                        <option value="ARZ044">Pulaski</option>
+                        <option value="ARZ008">Randolph</option>
+                        <option value="ARZ043">Saline</option>
+                        <option value="ARZ037">Scott</option>
+                        <option value="ARZ013">Searcy</option>
+                        <option value="ARZ029">Sebastian</option>
+                        <option value="ARZ050">Sevier</option>
+                        <option value="ARZ007">Sharp</option>
+                        <option value="ARZ048">St. Francis</option>
+                        <option value="ARZ014">Stone</option>
+                        <option value="ARZ073">Union</option>
+                        <option value="ARZ023">Van Buren</option>
+                        <option value="ARZ010">Washington</option>
+                        <option value="ARZ033">White</option>
+                        <option value="ARZ034">Woodruff</option>
+                        <option value="ARZ038">Yell</option>
+                    </select>
+                    <input onclick="return makefwftwo(this.form)" type="button" value="Get Category Day!">&nbsp;
+                </form>
+            </td>
+        </tr>
+    </body>
+</html>

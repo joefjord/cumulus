@@ -1,0 +1,30 @@
+body{
+	background: #312542;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.text1{
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.text2{
+	font-weight: bold;
+}
+
+#selectCounty{
+	text-align: center;
+	background-color: #343238;
+	border: none;
+}
+
+#callButton{
+	background: none;
+	border: none;
+}
