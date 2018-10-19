@@ -55,13 +55,28 @@ form {
 }
 
 select{
-font-size: 1em;
+font-size: 1.5em;
 }
 
 #results {
-	max-width: 100%
-	margin: 0 auto;
-	text-align: center;
+	max-width: 40%;
+    	text-align: center;
+    	margin: 0 auto 30px auto;
+    	padding-top: 30px;
+}
+
+#categoryframe {
+    font-size: 7em;
+    padding: 0 50px;
+}
+
+#descriptionframe {
+    font-size: 1.0em;
+    width: 75%;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 #selectCounty{
@@ -70,6 +85,8 @@ font-size: 1em;
 	background-color: #fff;
 	color: #373636;
 	border: none;
+	width: 240px;
+	height: 70px;
 }
 
 .call {

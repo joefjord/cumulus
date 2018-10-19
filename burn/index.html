@@ -1,33 +1,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script type="text/javascript" src="./catday.js"></script>
-        <title>Cumulus Burn</title>
+        <title>Prescribed Burn Calculator</title>
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
+
+
+
     <body>
       <header>
-        <img src="../images/cumulusMark.png">
+        <img src="../images/cumulusMark.png ">
         <h1>BURN</h1>
       </header>
 
-
-
       <div id="container">
             <div id="results">
-                <span id="myframe" class="text1 text2">
+                <span id="locationframe" class="text1 text2">
                 </span>
+                <div id="category">
+            		<span id="categoryframe" class="text1 text2">
+                	</span>
+                	<span id="descriptionframe" class="text3">
+                	</span>
+            	</div>
             </div>
             <div>
                 <form method="post" name="getcatday" size="1">
-            		<label for="selectCounty" class="text1">Select County: </label></br>
+            		<label for="selectCounty" class="text1">Select County: </label><br>
                     <select id="selectCounty" class="text1" onchange="return makefwftwo(this.form)" name="rencatday" size="1">
-                    	<option disabled selected="selected">-</option>
+                    	<option disabled="" selected="selected">-</option>
                         <option value="ARZ057">Arkansas</option>
                         <option value="ARZ074">Ashley</option>
                         <option value="ARZ005">Baxter</option>
@@ -107,7 +114,7 @@
                 </form>
             </div>
 
-            <a class="call"  href="tel:18008308015">
+            <a class="call" href="tel:18008308015">
 
                 <button id="callButton" class="text1 fa fa-phone"><p>Report your burn</p></button><br>
             </a>
@@ -116,4 +123,5 @@
 
         </div>
 
-    </body>
+</body>
+</html>
