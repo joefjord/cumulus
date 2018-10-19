@@ -135,7 +135,12 @@ if (fwfval == "ARZ075") { myzone = "CHICOT-"; myadd = "https://mesonet.agron.ias
       if (prodDay=="SAT" && prodAM==1 && findCatDay>=0) { dayOne = "Saturday: "; dayTwo = "Sunday: "; myCatDayOne = newLine.substr(findCatDay+22,1).trim() + "; "; myCatDayTwo = newLine.substr(findCatDay+48,1).trim(); }
       if (prodDay=="SAT" && prodPM==1 && findCatDay>=0) { dayOne = "Sunday: "; dayTwo = "Monday: "; myCatDayOne = newLine.substr(findCatDay+35,1).trim() + "; "; myCatDayTwo = newLine.substr(findCatDay+61,1).trim(); }
       if (findCatDay<0) { dayOne = "Not Available"; dayTwo = ""; myCatDayOne = ""; myCatDayTwo = ""; }
-      document.getElementById("myframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />" + "Category Day: "/*dayOne*/ + myCatDayOne.slice(0,-2) + "<br /><br />"; //+ dayTwo + myCatDayTwo;   
+      //document.getElementById("myframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />" + "Category Day: "/*dayOne*/ + myCatDayOne.slice(0,-2) + "<br /><br />"; //+ dayTwo + myCatDayTwo;
+      var categorydescription = ["Burning between 11:00 a.m. and 4:00 p.m.; a maximum of 100 acres and not before surface inversion has lifted. No burning in slash, piled debris, or heavy fuel loads.","No burning until 11:00 a.m. and not before inversion has lifted. Burn should be substantially over by 4:00 p.m.","Burn only after surface inversion has lifted.","Burn anytime.","Unstable and windy. Excellent smoke dispersal. Burn with caution"];
+      var categoryday = myCatDayOne.slice(0,-2);
+      document.getElementById("locationframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />";
+      document.getElementById("categoryframe").innerHTML = categoryday + "<br />";
+      document.getElementById("descriptionframe").innerHTML = categorydescription[categoryday-1];
     }
   };
   xhttp.open("GET", myadd, true);
