@@ -85,7 +85,8 @@ font-size: 1em;
 	background-color: #fff;
 	color: #373636;
 	border: none;
-	width: 30%;
+	width: 240px;
+	height: 70px;
 }
 
 .call {
