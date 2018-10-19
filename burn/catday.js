@@ -1,7 +1,7 @@
 var fwfval;
 
 function makefwfone() {
-fwfval="ARZ000"; 
+fwfval="ARZ000";
 makefwfthree();
 }
 
@@ -98,7 +98,7 @@ if (fwfval == "ARZ075") { myzone = "CHICOT-"; myadd = "https://mesonet.agron.ias
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var zoneLen = myzone.length;
-      var newZone = myzone.substr(0, zoneLen-1) + " COUNTY CATEGORY DAY"; 
+      var newZone = myzone.substr(0, zoneLen-1) + " COUNTY CATEGORY DAY";
       var myPreText = this.responseText;
       var myUprText = myPreText.toUpperCase();
       var begTextTwo = myUprText.indexOf(myzone);
@@ -110,9 +110,9 @@ if (fwfval == "ARZ075") { myzone = "CHICOT-"; myadd = "https://mesonet.agron.ias
       var begTextThree = myFireText.indexOf("PM CST");
       var begTextFour = myFireText.indexOf("PM CDT");
       var newLine; var prodDay;
-      if (begTextOne>=0) { newLine = myFireText.substr(begTextOne); prodDay = myFireText.substr(begTextOne+7,3).trim(); }  
+      if (begTextOne>=0) { newLine = myFireText.substr(begTextOne); prodDay = myFireText.substr(begTextOne+7,3).trim(); }
       if (begTextTwo>=0) { newLine = myFireText.substr(begTextTwo); prodDay = myFireText.substr(begTextTwo+7,3).trim(); }
-      if (begTextThree>=0) { newLine = myFireText.substr(begTextThree); prodDay = myFireText.substr(begTextThree+7,3).trim(); }  
+      if (begTextThree>=0) { newLine = myFireText.substr(begTextThree); prodDay = myFireText.substr(begTextThree+7,3).trim(); }
       if (begTextFour>=0) { newLine = myFireText.substr(begTextFour); prodDay = myFireText.substr(begTextFour+7,3).trim(); }
       var prodAM=0; var prodPM=0;
       var findTonight = newLine.indexOf("TONIGHT");
@@ -135,7 +135,13 @@ if (fwfval == "ARZ075") { myzone = "CHICOT-"; myadd = "https://mesonet.agron.ias
       if (prodDay=="SAT" && prodAM==1 && findCatDay>=0) { dayOne = "Saturday: "; dayTwo = "Sunday: "; myCatDayOne = newLine.substr(findCatDay+22,1).trim() + "; "; myCatDayTwo = newLine.substr(findCatDay+48,1).trim(); }
       if (prodDay=="SAT" && prodPM==1 && findCatDay>=0) { dayOne = "Sunday: "; dayTwo = "Monday: "; myCatDayOne = newLine.substr(findCatDay+35,1).trim() + "; "; myCatDayTwo = newLine.substr(findCatDay+61,1).trim(); }
       if (findCatDay<0) { dayOne = "Not Available"; dayTwo = ""; myCatDayOne = ""; myCatDayTwo = ""; }
-      document.getElementById("myframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />" + "Category Day: "/*dayOne*/ + myCatDayOne.slice(0,-2) + "<br /><br />"; //+ dayTwo + myCatDayTwo;   
+      var categorydescription = ["Do Not Burn.","No ignitions if there is an inversion, no ignitions before 11am…stop ignitions before 4pm.","Good burning conditions.","Good burning conditions.","Good burning conditions but use caution…airmass is very unstable, possible wind problems."];
+      var backgroundColors = ["#b3352d", "#feb645", "#5ea14d", "#5ea14d","#feb645"];
+      var categoryday = myCatDayOne.slice(0,-2);
+      document.getElementById("locationframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />";
+      document.getElementById("categoryframe").innerHTML = categoryday + "<br />";
+      document.getElementById("descriptionframe").innerHTML = categorydescription[categoryday-1];
+		  $("#results").css("background-color", backgroundColors[categoryday-1]);
     }
   };
   xhttp.open("GET", myadd, true);
