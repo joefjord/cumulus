@@ -136,7 +136,7 @@ if (fwfval == "ARZ075") { myzone = "CHICOT-"; myadd = "https://mesonet.agron.ias
       if (prodDay=="SAT" && prodPM==1 && findCatDay>=0) { dayOne = "Sunday: "; dayTwo = "Monday: "; myCatDayOne = newLine.substr(findCatDay+35,1).trim() + "; "; myCatDayTwo = newLine.substr(findCatDay+61,1).trim(); }
       if (findCatDay<0) { dayOne = "Not Available"; dayTwo = ""; myCatDayOne = ""; myCatDayTwo = ""; }
       //document.getElementById("myframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />" + "Category Day: "/*dayOne*/ + myCatDayOne.slice(0,-2) + "<br /><br />"; //+ dayTwo + myCatDayTwo;
-      var categorydescription = ["Do not Burn.","No ignitions if there is an inversion, no ignitions before 11am…stop ignitions before 4pm","Good burning conditions.","Good burning conditions.","Good burning conditions but use caution…airmass is very unstable, possible wind problems"];
+      var categorydescription = ["Do Not Burn.","No ignitions if there is an inversion, no ignitions before 11am…stop ignitions before 4pm.","Good burning conditions.","Good burning conditions.","Good burning conditions but use caution…airmass is very unstable, possible wind problems."];
       var categoryday = myCatDayOne.slice(0,-2);
       document.getElementById("locationframe").innerHTML = newZone + "<br />" + myofc + "<br /><br />";
       document.getElementById("categoryframe").innerHTML = categoryday + "<br />";
