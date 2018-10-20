@@ -2,6 +2,8 @@ body{
 	background: url(../images/img-noise-361x370.png) #373636;
 		font-size: 20px;
 		font-family: 'Roboto',sans-serif;
+		margin: 0;
+		padding: 0;
 }
 
 header {
