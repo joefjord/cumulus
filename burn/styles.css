@@ -115,3 +115,11 @@ font-size: 1.5em;
 #callButton:hover {
 	background:  #84541B;
 }
+ 
+@media screen and (max-width: 650px) {
+
+		#results {
+			width: 80%;
+		}
+
+}
