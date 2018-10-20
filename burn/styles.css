@@ -70,6 +70,9 @@ font-size: 1.5em;
 #categoryframe {
     font-size: 7em;
     padding: 0 50px;
+		text-align: center;
+		width: 105px;
+		margin-left: -28px;
 }
 
 #descriptionframe {
