@@ -59,10 +59,11 @@ font-size: 1.5em;
 }
 
 #results {
-	width: 40%;
+	width: 45%;
     	text-align: center;
     	margin: 0 auto 30px auto;
     	padding-top: 30px;
+			padding: 30px 15px 0 15px;
 }
 
 #categoryframe {
@@ -120,6 +121,7 @@ font-size: 1.5em;
 
 		#results {
 			width: 80%;
+
 		}
 
 }
