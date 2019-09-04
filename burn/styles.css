@@ -10,14 +10,14 @@ body {
 }
 
 main {
-  width: 95%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 360px;
   margin: 0 auto;
 }
 
 header {
-  width: 400px;
-  max-width: 95%;
+  width: 360px;
+  max-width: 90%;
   margin: 50px auto 80px auto;
 }
 
@@ -94,6 +94,10 @@ input[type='number']::placeholder {
   font-weight: 700;
   font-size: 1.0em;
   color: rgba(68, 68, 68, 0.8);
+}
+
+.target-field {
+  max-width: 30%;
 }
 
 .custom-select {
