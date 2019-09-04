@@ -1,0 +1,131 @@
+body{
+	background: url(../images/img-noise-361x370.png) #373636;
+		font-size: 20px;
+		font-family: 'Roboto',sans-serif;
+		margin: 0;
+		padding: 0;
+}
+
+header {
+	width: 105px;
+	max-width: 25%;
+	margin: 0 auto;
+	position: relative;
+	top: 70px;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+header h1 {
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+	width: 105px;
+	color: #84541B;
+	margin-top: 5px;
+}
+
+#container {
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 115px;
+}
+
+form {
+	margin: 0 auto;
+	width: auto;
+	text-align: center;
+}
+
+.text1{
+	color: white;
+}
+
+.text2{
+	font-weight: bold;
+}
+
+.text3 {
+	font-size: .75em;
+	font-weight: 100;
+	color: white;
+	width: 200px;
+	margin: 15px auto 0 auto;
+}
+
+select{
+font-size: 1.5em;
+}
+
+#results {
+	width: 100%;
+    	text-align: center;
+    	margin: 0 0 30px 0;
+			padding: 30px 15px 0 15px;
+}
+
+#categoryframe {
+    font-size: 7em;
+    padding: 0 50px;
+		text-align: center;
+		width: 105px;
+		margin-left: -28px;
+}
+
+#descriptionframe {
+    font-size: 1.0em;
+    width: 75%;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#selectCounty{
+	margin-top: 15px;
+	text-align: center;
+	background-color: #fff;
+	color: #373636;
+	border: none;
+	width: 240px;
+	height: 70px;
+}
+
+.call {
+	display: block;
+	width: 240px;
+	height: 80px;
+	margin: 70px auto 0 auto;
+}
+
+#callButton{
+	width: 240px;
+	height: 80px;
+	margin: 0 auto;
+	background:  #CC7B1A;
+	border: none;
+	font-size: .7em;
+}
+
+#callButton p {
+	font-family: 'Roboto',sans-serif;
+	display: inline;
+	padding-left: 15px;
+	text-transform: uppercase;
+}
+
+#callButton:hover {
+	background:  #84541B;
+}
+
+@media screen and (max-width: 650px) {
+
+		#results {
+			width: 100%;
+
+		}
+
+}

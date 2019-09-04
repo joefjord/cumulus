@@ -1,131 +1,170 @@
-body{
-	background: url(../images/img-noise-361x370.png) #373636;
-		font-size: 20px;
-		font-family: 'Roboto',sans-serif;
-		margin: 0;
-		padding: 0;
+html {
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgb(242, 98, 0);
+}
+
+main {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 header {
-	width: 105px;
-	max-width: 25%;
-	margin: 0 auto;
-	position: relative;
-	top: 70px;
+  width: 360px;
+  max-width: 90%;
+  margin: 50px auto 80px auto;
 }
 
 header img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
-header h1 {
-	font-weight: 300;
-	font-size: 1.5em;
-	text-align: center;
-	width: 105px;
-	color: #84541B;
-	margin-top: 5px;
+main section {
+  background-color: rgba(255,255,255,1);
+  color: rgb(68,68,68);
+  padding: 20px 0 20px 20px;
+  border-radius: 5.15px 5.15px 0 0;
 }
 
-#container {
-	max-width: 100%;
-	margin: 0 auto;
-	position: relative;
-	top: 115px;
+.submit {
+  margin-top: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 5.15px 5.15px;
+  background-color: rgb(68, 68, 68);
 }
 
-form {
-	margin: 0 auto;
-	width: auto;
-	text-align: center;
+.submit:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition-duration: 0.5s;
 }
 
-.text1{
-	color: white;
+.submit p {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.text2{
-	font-weight: bold;
+.submit p:hover {
+  color: rgb(68, 68, 68);
+  font-size: 2em;
+  padding: 20px 0;
+  transition-duration: 0.5s;
 }
 
-.text3 {
-	font-size: .75em;
-	font-weight: 100;
-	color: white;
-	width: 200px;
-	margin: 15px auto 0 auto;
+.submit p i {
+  padding-right: 15px;
 }
 
-select{
-font-size: 1.5em;
+input[type='number'] {
+  height: 40px;
+  max-width: 48%;
+  font-size: .8em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+
 }
 
-#results {
-	width: 100%;
-    	text-align: center;
-    	margin: 0 0 30px 0;
-			padding: 30px 15px 0 15px;
+input[type='number']::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.0em;
+  color: rgba(68, 68, 68, 0.8);
 }
 
-#categoryframe {
-    font-size: 7em;
-    padding: 0 50px;
-		text-align: center;
-		width: 105px;
-		margin-left: -28px;
+.custom-select {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  color: rgba(68, 68, 68, 0.8);
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  box-sizing: border-box;
+  border: .5px solid rgba(68,68,68, 0.2);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  background-image: url('images/caret-down-solid.svg');
+  background-repeat: no-repeat;
+background-position: right .7em top 50%;
+background-size: .65em;
 }
 
-#descriptionframe {
-    font-size: 1.0em;
-    width: 75%;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 30px;
-    font-weight: bold;
+.custom-select:focus {
+	border-color: #aaa;
+	color: #222;
+	outline: none;
 }
 
-#selectCounty{
-	margin-top: 15px;
-	text-align: center;
-	background-color: #fff;
-	color: #373636;
-	border: none;
-	width: 240px;
-	height: 70px;
+.fa-caret-down {
+  box-sizing: border-box;
+  border: .5px solid rgba(68,68,68, 0.2);
+  padding: 10px 10px 0 10px;
+  height: 40px;
+  width: 40px;
+  background: rgba(68,68,68, 0.05);
+  font-size: .8em;
+  text-align: center;
 }
 
-.call {
-	display: block;
-	width: 240px;
-	height: 80px;
-	margin: 70px auto 0 auto;
+.fa-caret-down:hover {
+  background-color: background: rgba(68,68,68, 1);
 }
 
-#callButton{
-	width: 240px;
-	height: 80px;
-	margin: 0 auto;
-	background:  #CC7B1A;
-	border: none;
-	font-size: .7em;
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
 }
 
-#callButton p {
-	font-family: 'Roboto',sans-serif;
-	display: inline;
-	padding-left: 15px;
-	text-transform: uppercase;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
 }
 
-#callButton:hover {
-	background:  #84541B;
+.btn {
+  max-width: 50%;
+  height: 60px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8em;
+  padding: 0 20px;
+  margin-right: 10px;
+  border-radius: 5.15px;
+  border: none;
 }
 
-@media screen and (max-width: 650px) {
+.btn-calc:hover {
+  background-color: rgba(242, 98, 0, 0.9);
+  transition-duration: 0.25s;
+}
 
-		#results {
-			width: 100%;
+.btn-calc {
+  background-color: rgba(242, 98, 0, 0.7);
+}
 
-		}
+.btn-alt {
+  background-color: rgba(68, 68, 68, 0.7);
+}
 
+.btn-alt:hover {
+  background-color: rgba(68, 68, 68, 0.9);
+  transition-duration: 0.25s;
+}
+
+#burnCalc input {
+  margin-bottom: 25px;
 }
