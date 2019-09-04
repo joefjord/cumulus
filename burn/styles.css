@@ -32,6 +32,12 @@ main section {
   border-radius: 5.15px 5.15px 0 0;
 }
 
+input[type='submit'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
 .submit {
   margin-top: 0;
   width: 100%;
