@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Prescribed Burn Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/687c374e54.js"></script>
+    </head>
+    <body>
+        <main>
+        <header> <img src="images/cb_logo@375px.png">
+        </header>
+        <!-- <h1>Smoke Management Form</h1> -->
+        <section>
+        <form id="burnCalc">
+            <!-- Burn Size -->
+            <label for="sizeInput">Burn Size: </label>
+            <input id="sizeInput" name="sizeInput" type="number" step="1" min="0" required placeholder="Number of Acres">
+            <br>
+
+            <!-- Category Day -->
+            <label for="categoryInput">Category Day: </label>
+            <select name="categoryInput" id="categoryInput" class="custom-select"  required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br><br>
+
+            <!-- Target Distance -->
+            <label for="targetInput">Target Distance: </label>
+            <input id="targetInput"
+             class="target-field"
+             name="targetInput" type="number" step="0.5" min="0.5" required placeholder="In Miles "><br>
+
+            <!-- Fuel Type -->
+            <label for="fuelInput">Fuel Type: </label>
+            <select name="fuelInput" class="custom-select"  id="fuelInput" required>
+                <option value="Corn" disabled>Corn</option>
+                <option value="Cotton" disabled>Cotton</option>
+                <option value="Rice" selected>Rice</option>
+                <option value="Soybean" disabled>Soybean</option>
+                <option value="Wheat" disabled>Wheat</option>
+            </select>
+            <br><br>
+
+            <!-- Fuel Type -->
+            <label for="loadInput">Load: </label>
+            <select name="loadInput" id="loadInput" class="custom-select" required>
+                <option value="Low" disabled>Low</option>
+                <option value="Moderate" selected>Moderate</option>
+                <option value="Heavy" disabled>Heavy</option>
+            </select>
+            <br><br>
+
+
+            <input type="submit" value="Calculate" class="btn btn-calc">
+            <button id="clear" class="btn btn-alt">Clear</button>
+        </form>
+
+        <div>
+            Available Tons: <span id="availableTons"></span>
+        </div>
+        <br>
+        <div>
+            Total Tons: <span id="totalTons"></span>
+        </div>
+
+        <br>
+        <div>
+            <span id="resultOutput"></span>
+        </div>
+
+      </section>
+        <a href="tel:18008308015">
+            <button id="button" class="vibrate-1 submit"><p> <i class="fas fa-phone"></i> Report your burn</p></button>
+        </a>
+      </main>
+        <script src="tons_per_acre_table.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

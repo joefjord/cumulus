@@ -39,33 +39,6 @@ input[type='submit'] {
           appearance: none;
 }
 
-#locationframe.text1 {
-  color: rgb(68, 68, 68);
-  font-size: .8em;
-  padding: 0;
-  display: none;
-}
-
-#categoryframe.text2 {
-  color: rgba(242, 98, 0, 0.9);
-  font-size: 1.2em;
-  display: none;
-  margin-top: 10px;
-}
-
-#descriptionframe.text3 {
-  /* color: rgb(68, 68, 68); */
-  /* font-size: .6em; */
-  color: rgba(242, 98, 0, 0.7);
-  font-size: 1.2em;
-  font-weight: 700;
-  text-align: center;
-  display: inline-block;
-  width: 90%;
-  margin: -20 auto 10 auto;
-  padding: 12px;
-}
-
 .submit {
   margin-top: 0;
   width: 100%;
