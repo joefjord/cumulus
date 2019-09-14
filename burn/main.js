@@ -172,6 +172,9 @@ function clear() {
     form.reset();
     availableResult.textContent = "";
     totalResult.textContent = "";
+    locationframe.textContent = "";
+    categoryframe.textContent = "";
+    descriptionframe.textContent = "";
 }
 
 /** When User Submits Form */
