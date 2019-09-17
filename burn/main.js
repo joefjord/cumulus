@@ -175,6 +175,7 @@ function clear() {
     locationframe.textContent = "";
     categoryframe.textContent = "";
     descriptionframe.textContent = "";
+    resultOutput.textContent = "";
 }
 
 /** When User Submits Form */
