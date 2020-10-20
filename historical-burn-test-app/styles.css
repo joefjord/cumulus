@@ -1,0 +1,217 @@
+html {
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgb(242, 98, 0);
+}
+
+main {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+header {
+  width: 360px;
+  max-width: 100%;
+  margin: 50px auto 80px auto;
+}
+
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main section {
+  background-color: rgba(255,255,255,1);
+  color: rgb(68,68,68);
+  padding: 20px 0 20px 20px;
+  border-radius: 5.15px 5.15px 0 0;
+}
+
+input[type='submit'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+#locationframe.text1 {
+  color: rgb(68, 68, 68);
+  font-size: .8em;
+  padding: 0;
+  display: none;
+}
+
+#categoryframe.text2 {
+  color: rgba(242, 98, 0, 0.9);
+  font-size: 1.2em;
+  display: none;
+  margin-top: 10px;
+}
+
+#descriptionframe.text3 {
+  /* color: rgb(68, 68, 68); */
+  /* font-size: .6em; */
+  color: rgba(242, 98, 0, 0.7);
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  margin: -20 auto 10 auto;
+  padding: 12px;
+}
+
+.submit {
+  margin-top: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 5.15px 5.15px;
+  background-color: rgb(68, 68, 68);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.submit:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition-duration: 0.5s;
+}
+
+.submit p {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.submit p:hover {
+  color: rgb(68, 68, 68);
+  font-size: 2em;
+  padding: 20px 0;
+  transition-duration: 0.5s;
+}
+
+.submit p i {
+  padding-right: 15px;
+}
+
+input[type='number'] {
+  height: 40px;
+  max-width: 48%;
+  font-size: .8em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border: .5px solid rgba(68,68,68, 0.2);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+       box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+input[type='number']::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.0em;
+  color: rgba(68, 68, 68, 0.8);
+}
+
+.target-field {
+  max-width: 30%;
+}
+
+.custom-select {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  color: rgba(68, 68, 68, 0.8);
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  box-sizing: border-box;
+  border: .5px solid rgba(68,68,68, 0.2);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+  background-image: url('images/caret-down-solid.svg');
+  background-repeat: no-repeat;
+background-position: right .7em top 50%;
+background-size: .65em;
+}
+
+.custom-select:focus {
+	border-color: #aaa;
+	color: #222;
+	outline: none;
+}
+
+.fa-caret-down {
+  box-sizing: border-box;
+  border: .5px solid rgba(68,68,68, 0.2);
+  padding: 10px 10px 0 10px;
+  height: 40px;
+  width: 40px;
+  background: rgba(68,68,68, 0.05);
+  font-size: .8em;
+  text-align: center;
+}
+
+.fa-caret-down:hover {
+  background-color: background: rgba(68,68,68, 1);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+
+.btn {
+  max-width: 50%;
+  height: 60px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8em;
+  padding: 0 20px;
+  margin-right: 10px;
+  border-radius: 5.15px;
+  border: none;
+}
+
+.btn-calc:hover {
+  background-color: rgba(242, 98, 0, 0.9);
+  transition-duration: 0.25s;
+}
+
+.btn-calc {
+  background-color: rgba(242, 98, 0, 0.7);
+}
+
+.btn-alt {
+  background-color: rgba(68, 68, 68, 0.7);
+}
+
+.btn-alt:hover {
+  background-color: rgba(68, 68, 68, 0.9);
+  transition-duration: 0.25s;
+}
+
+#burnCalc input {
+  margin-bottom: 25px;
+}
