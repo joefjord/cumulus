@@ -1,192 +1,466 @@
-@charset "UTF-8";
-/* CSS Document */
-/* This is a CSS comment */
-
-/* This is another way to control how your site appears on mobile devices. Some prefer it to the meta tag within the html. It doesn't hurt to do both, so we will. */
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
-
-@-ms-viewport{
-    width: extend-to-zoom;
-    zoom: 1.0;
-}
-/* ------------------------------- */
 
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-}
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
 
-header {
-  font-size: .9em;
-  color: #ece6e4;
-  height: 55px;
-  padding: 22px 0 0 0;
-  width: 100%;
-  background-color: rgba(55, 54, 54, 1);
-  /* box shadow */
-  -webkit-box-shadow: 0px 6px 14px -4px rgba(55,54,54,1);
-     -moz-box-shadow: 0px 6px 14px -4px rgba(55,54,54,1);
-          box-shadow: 0px 6px 14px -4px rgba(55,54,54,1);
-  position: relative;
-  z-index: 1000
-}
+@media only screen and (min-width: 0px) {
+    header {
+    background-color: hsl(208, 100%, 38%);
+    }
 
-footer {
-  color: #ece6e4;
-  height: 35px;
-  /* padding: 20px; */
-  width: 100%;
-  background-color: rgba(55, 54, 54, 1);
-}
+    #hero {
+        height: auto;
+        background: url("../images/crop-ghosts_of_southern_witches.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
 
-nav a {
-  font-size: .95em;
-  color: #ece6e4;
-  text-decoration: none;
-  margin-right: 35px;
-}
+    #dark {
+        position: absolute;
+        background: #000;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        z-index: 0;
+    }
 
-nav a:hover {
-  color: #CC7236;
-}
+    .heroText {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 00px;
+    }
 
-#home img {
-  height: 75%;
-  padding: 0 0 0 25px;
-  margin-bottom: 20px;
-}
+    .hero-content {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
 
-#home h1 {
-  display: inline-block;
-  vertical-align: top;
-  font-weight: 100;
-  font-size: 1.2em;
-  margin-left: 30px;
-  margin-top: 10px;
-}
+    .home-h {
+        color: #fff;
+        font-size: 2em;
+        letter-spacing: 1px;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: -1px 0px 18px rgba(0, 0, 0, .45);
+    }
 
-#menu {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 12px;
-  /* margin-left: 10%; */
-  float: right;
-  margin-right: 25px;
-}
+    .heroText h1 {
+      text-transform: capitalize !important;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
 
-#feature {
-  width: 100%;
-  height: auto;
-  background-color: red;
-  margin-top: -18px;
-  padding-bottom: 25px;
-  /* background-image: url(../images/smoke.jpg); */
-  background: url(../images/smoke.jpg) no-repeat center center fixed;
-  background-size: cover;
-  background-color: #CC7236;
-}
+    .heroText h2 {
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        text-align: center;
+        line-height: 2em;
+    }
 
-#feature h2 {
-  padding-top:20%;
-  letter-spacing: .6em;
-  width 200px;
-  text-align: center;
-  margin: 0 auto;
-}
+    #home-p {
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        width: 100%;
+        line-height: 2em;
+        text-align: center;
+    }
 
-#feature iframe {
-  padding-top: 55px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-left: 20%;
-  width: 60%;
-  height: 1270px;
-  overflow: hidden;
-}
+    .heroText button {
+        width: 100%;
+        height: 55px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
+    .heroText a {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
 
-#contact {
-  background-color: #CC7236;
-  height: auto;
-  min-height: 60px;
-  width: 100%;
-  margin-top: -18px;
-}
+    .heroText .button-solid {
+        margin-bottom: 10px;
+    }
 
-.photoCredit {
-  font-size: .65em;
-  color: rgba(255, 255, 255, .3);
-  float: right;
-  margin-top: 10px;
-  padding-right: 15px;
-}
+    .heroText .button-transparent {
+        border: none;
+    }
 
-.copyright {
-  font-size: .65em;
-  color: rgba(255, 255, 255, .3);
-  position: relative;
-  bottom: -35px;
-  left: 42%;
-}
-
-.CUMULUS {
-  font-size: 30.3px;
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.45;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ece6e4;
-}
-
-
-/* resize contact form for smaller widths */
-@media only screen
-  and (max-width: 950px)  {
-      #feature iframe {
-        width: 85%;
-        height: 1300px;
-        margin-left: 8%;
+    .card__content box button {
+        width: 50%;
+        height: 55px;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
+
+    section #about {
+        height: auto;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 1500px;
+    }
+
+    .aboutText {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .about-content {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .about-h {
+        color: #fff;
+        font-size: 2em;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .aboutText h1 {
+      text-transform: capitalize !important;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      color: hsl(212, 100%, 25%);
+      margin-bottom: 25px;
+    }
+
+    .aboutText h2 {
+      text-transform: capitalize !important;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      color: hsl(212, 100%, 25%);
+      font-size: 1.75em;
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 8px;
+    }
+
+    .aboutText h3 {
+      text-transform: uppercase !important;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 300;
+      color: hsl(212, 100%, 25%);
+      font-size: 1em;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+
+
+    .about-container {
+      width: 100%;
+      max-width: 750px;
+    }
+
+    .about-container:nth-child(1){
+      margin-bottom: 60px;
+        /* End About Text */
+    }
 }
 
-/* fix feature area headline */
-@media only screen
-  and (max-width: 775px)  {
-    #feature iframe {
-      width: 85%;
-      height: 1400px;
-      margin-left: 8%;
+@media only screen and (min-width: 768px) {
+
+    .heroText {
+        margin-top: 100px;
+        max-width: 570px;
     }
-    #feature h2 {
-      font-size: 1.25em;
-      letter-spacing: .5em;
+
+    .home-h {
+        font-size: 3em;
+    }
+
+    .heroText h2 {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .about-container {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .aboutText {
+        width: 100% !important;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 0;
     }
 }
 
-/* implement mobile menu */
-@media only screen
-  and (max-width: 650px)  {
-    #feature h2 {
-      padding: 20% 15px 0 15px;
+@media only screen and (min-width: 1024px) {
+    #hero .container {
+        max-width: 800px;
+    }
+
+    #hero {
+        background-attachment: fixed;
+        min-height: 50vh; /* makes this section as tall as whatever the screen is */
+    }
+
+    .heroText {
+        margin-top: 250px;
+        margin-left: 0;
+        max-width: 600px;
+    }
+
+    .home-h {
+      font-family: 'Rubik', sans-serif;
+        text-align: left;
+        font-size: 45px;
+    }
+
+    .heroText h2 {
+        text-align: left;
+        line-height: 1.7em;
+        width: 500px;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .heroText a {
+        display: inline-block;
+    }
+
+    .heroText .button-solid {
+        margin-right: 20px;
+    }
+
+    .heroText .button-transparent {
+        border: none;
+    }
+
+    .about-container {
+        max-width: 800px;
     }
 }
 
-@media only screen and (min-width: 1115px;) {
-  #feature iframe {
+@media only screen and (min-width: 1300px) {
 
-    height: 800px;
+    #hero .container {
+        max-width: 1200px;
+    }
+}
+
+/*-- -------------------------- -->
+<---          About           -->
+<--- -------------------------- -*/
+@media screen and (min-width: 0px) {
+
+     .cards {
+       display: flex;
+       flex-wrap: wrap;
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       max-width: 800px;
+       margin: 0 auto;
+     }
+
+     .cards__item {
+       display: flex;
+       padding: 1rem;
+       width: 100%;
+     }
+
+     .card {
+       background-color: white;
+       border-radius: 0.25rem;
+       border-bottom: 10px solid hsl(21, 62%, 55%);
+       box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+       display: flex;
+       flex-direction: column;
+       overflow: hidden;
+     }
+
+     .card__content {
+       display: flex;
+       flex: 1 1 auto;
+       flex-direction: column;
+       padding: 1rem;
+     }
+
+     .card__image {
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       border-top-left-radius: 0.25rem;
+       border-top-right-radius: 0.25rem;
+       overflow: hidden;
+       position: relative;
+       }
+
+     .card__image::before {
+         content: "";
+     	  display: block;
+         padding-top: 85%; // 3:2 aspect ratio
+       }
+
+
+
+     .card__image--joe {
+       background-image: url("../images/JoeFord2019.jpg");
+     }
+
+     .card__image--cameron {
+       background-image: url("../images/cameron.jpg");
+     }
+
+     .card__title {
+       color: hsl(212, 100%, 25%);
+       font-size: 1rem;
+       font-weight: 700;
+       font-style: italic;
+       font-family: "Poppins", sans-serif;
+       letter-spacing: 2px;
+       text-transform: uppercase;
+       padding-top: .3rem;
+       margin-bottom: .3rem
+     }
+
+     .card__text {
+       flex: 1 1 auto;
+       font-size: 0.875rem;
+       line-height: 1.5;
+       padding-bottom: 1rem;
+     }
+
+     #moreCameron {display: none;}
+
+     #moreJoe {display: none;}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 750px) {
+    .cards {
+      width: 75%;
+    }
+
+    .cards__item {
+      width: 100%;
+    }
   }
 
-  #feature h2 {
-    padding-top:10%;
-    padding-bottom: 40px;
-    font-size: 1em;
-    letter-spacing: .25em;
+@media screen and (min-width: 750px) {
+  .cards {
+    width: 100%;
+  }
+
+  .cards__item {
+    width: 50%;
   }
 }
+
+/* About text boxes toggle */
+
+.box input{
+
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .box input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  .box input:checked + p {
+    -webkit-line-clamp: unset;
+  }
+
+  .box input:checked ~ label {
+    display: none;
+  }
+
+
+  /* PORTFOLIO */
+
+  @media only screen and (min-width: 0px) {
+      header {
+      background-color: hsl(208, 100%, 38%);
+      }
+
+      #portfolioHero {
+          height: auto;
+          background: url("../images/underConstructionWide.gif");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative;
+          padding-top: 50px;
+          padding-bottom: 150px;
+      }
+    }

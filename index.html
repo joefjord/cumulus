@@ -1,50 +1,231 @@
-<!DOCTYPE html >
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		<link type="text/css" rel="stylesheet" href="css/media-queries.css" />
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,600" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<title>CUMULUS TECH</title>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-	<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<header id="home">
-			<img src="images/cumulusMark.png">
-			<h1>CUMULUS TECH</h1>
-			<!-- <nav id="menu">
-				<a  href="#home" >Home</a>
-				<a  href="#about">About</a>
-				<a  href="#contact">Contact Us</a>
-			</nav> -->
-		</header>
+    <link rel="canonical" href="">
 
-		<section id="feature">
-				<h2>WE&apos;RE LAUNCHING SOON</h2>
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctX0_dCn0X6PxYIOGQHyl8haOfDFapCgskeRB9UPeh-9PvIw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-				<!-- <article>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-					<button>
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
 
-					</button>
-					<p></p>
-				</article> -->
-		</section>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-		<section id="contact">
-			<p><small class="photoCredit">Photo of agricultural smoke by John Westrock on Unsplash</small></p>
-			<p><small class="copyright">Copyright &copy; 2018 Cumulus Tech, LLC</small></p>
-		</section>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/core-styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
 
-		<!-- temporarily removed footer for Launching Soon view asdf
 
-		<footer>
-				``
-		</footer> -->
-	</body>
+
+    <!-- jQuery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet">
+
+    <title>cumulus tech | The future of the Delta is now</title>
+</head>
+<body>
+
+
+
+    <header id="top">
+
+
+        <!-- Mobile Nav Strip -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img id="mobile-logo" src="images/cumulus_tech_logo@2x.png" alt="cumulus_tech_logo" height="100">
+
+                <!-- Hamburger Menu -->
+                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav>
+            <div class="navbar-menu">
+                <div id="side-menu" class=" side-nav">
+                    <img aria-hidden="true" src="images/cumulus_tech_logo@2x.png" alt="cumulus tech logo" height="140">
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a class="active-menu" href="#top">Home</a></li>
+                        <li class="nav-li"><a href="#about">About</a></li>
+                        <li class="nav-li"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-li"><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+
+        <section id="hero">
+            <div aria-hidden="true" id="dark"></div>
+            <div class="container hero-content">
+                <div class="heroText">
+                    <h1 class="home-h">The Future of the Delta is Now</h1>
+                    <h2>Enriching the Delta with cutting&ndash;edge and emerging technologies to addresses public health, education, agriculture, and tourism.</h2>
+                    <a class="button-solid" href="#about" >
+                        Learn More
+                    </a>
+                    <a class="button-transparent" href="#contact-form">
+                        Free Consult
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <!-- <section id="services">
+
+        </section> -->
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="about">
+          <div class="aboutText">
+              <div class="about-container" >
+                <h2>About cumulus tech</h2>
+
+                <p>We’re passionate about helping people live healthier, more engaging and prosperous lives. Our digital experiences address public health, education, agriculture, and tourism. We’re a small, mission-driven company with an incredible team of design technologists and partners from an array of scientific disciplines.</p>
+
+
+                <h2>our story</h2>
+                <h3>From the small idea to a growing company</h3>
+                <p>Cumulus Tech was founded in 2017 by designers and educators Joe Ford and Cameron Buckley. They set out with a desire to build tools that could help Improve the lives of their friends and neighbors in the Mississippi River Delta. Since its creation, Cumulus Tech has developed apps that serve a diverse user base from rice farmers, educators, and struggling communities hoping to rebuild their economy through tourism.</p>
+
+
+                <h2>our purpose</h2>
+                <h3>Driven by passion, rooted in human centered methods</h3>
+                <p>Our goal is to develop partnerships, not clients. We seek to understand fully the needs and desires of the communities we serve so that we are able to provide effective solutions that real humans can and will use. So many factors influence healthy communities, and our team exists to provide you with the tools to navigate that path. Our partnership network of experts and researchers  help us find novel ways to achieve your goals.</p>
+
+
+                <h2>our products</h2>
+                <h3>We build tools to help communities thrive</h3>
+                <p>Our apps and services empower a diverse user base to take action to improve their communities. We leverage the knowledge of our partners and emerging technologies like augmented reality, artificial intelligence, game design, and mobile app development to offer personalized digital tools.</p>
+              </div>
+          </div>
+          <ul class="cards">
+            <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--cameron"></div>
+                <div class="card__content">
+                  <div class="card__title">Cameron Buckley</div>
+                  <p class="card__text">Cameron is a Learning Designer at The Delta School in Wilson, Arkansas. He develops native applications and digital experiences involving augmented and virtual reality, and game design.
+                 </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--joe"></div>
+                <div class="card__content">
+                  <div class="card__title">Joe Ford</div>
+                  <p class="card__text">Joe is Cumulus Tech’s founder. He also serves as Associate Professor of Digital Design at Arkansas State University (A-State). His focus is on human centered design and the practical application of emerging academic research.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <img src="images/cumulusTechLogoWhite@2x.png" alt="cumulus_tech_logo">
+
+        <!-- FORM -->
+        <section id="valley-form" class="container">
+            <form id="contact-form" name="Contact Form" method="post" data-netlify="true">
+                <h3 class="contact-topper">Send a message</h3>
+                <p class="form-p">Let us know if you have any questions or would like ot talk about a potential project. We respond to every call or email we get!</p>
+
+                <input aria-label="name" class="input1" name="name" placeholder="Name" type="text" tabindex="1" required>
+                <input aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
+                <input aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
+                <input aria-label="location" class="input1 right" name="location" placeholder="Location" type="text" tabindex="4" required>
+                <input aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
+                <textarea aria-label="write your message" name="message" placeholder="Tell us about your project" tabindex="6" required></textarea>
+
+                <p class="form-submit">
+                    <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">Submit</button>
+                </p>
+            </form>
+        </section>
+        <!-- END FORM -->
+
+        <div class="contact-group">
+            <a class="phone" href="tel:870-761-3702">(870) 761&ndash;3702</a><span>Jonesboro, AR&nbsp; &#124; Osceola, AR</span><a href="example@email.com">consult@cumulus-tech.com</a>
+        </div>
+        <ul>
+            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="/index.html#services">Services</a></li> -->
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="credit">Designed and Developed by <a href="https://www.cumulus-tech.com/"> cumulus tech, LLC</a><span class="copy">&copy; 2021</span></div>
+        <!-- <div class="circle-container">
+            <div aria-hidden="true" class="circle circle1"></div>
+            <div aria-hidden="true" class="circle circle2"></div>
+        </div> -->
+    </footer>
+
+    <script>
+        var ba = ["MSIE","Trident","Edge"];
+        var b, ua = navigator.userAgent;
+        for(var i=0; i < ba.length; i++){
+            if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+                break;
+            }
+        }
+        if(b == "MSIE" || b == "Trident" || b == "Edge"){
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+    <script defer src="app.js"></script>
+
+
+</body>
 </html>
